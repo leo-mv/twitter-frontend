@@ -1,0 +1,44 @@
+*, *::before, *::after
+	box-sizing: inherit
+
+html
+	box-sizing: border-box
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+body
+	margin: 0
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+	background: #E5E5E5
+	font-family: Gilroy
+	color: #202020
+	&::before
+		content: ''
+		display: block
+		width: 100%
+		height: 100px
+	&::after
+		content: ''
+		position: fixed
+		display: block
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		+bg('blue-burst-abstract-bg.png')
+		z-index: -1
+		opacity: .1
+
+img
+	max-width: 100%
+
+a 
+	text-decoration: none
+
+h1
+	text-align: center
+
+.container
+	margin: 0 auto
+	width: 100%
+	max-width: 830px
+	padding: 0 15px
